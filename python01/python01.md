@@ -182,7 +182,7 @@ print(total_cost)  # Output: 25.0
 message1 = "Hello, world!"
 message2 = 'Hello, world!'
 message3 = 'student\'s task'
-message4 = "student\'s task"
+message4 = "student's task"
 message5 = "Hello, world!\nThis is on a new line."
 path = "C:\\Users\\john\\documents"
 
