@@ -7,6 +7,7 @@ if temperature > 30:
     print("It's hot outside!")
 elif temperature > 20:
     print("It's warm outside.")
+    print("It's warm outside.")
 else:
     print("It's cold outside.")
 
