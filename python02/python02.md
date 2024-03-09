@@ -79,8 +79,6 @@ else:
 
 ## Logic operations (and, or, not)
 
-**Content:**
-
 * **Logical operators:**
     * Evaluate expressions involving Boolean values.
     * `and`, `or`, `not`
@@ -392,8 +390,6 @@ print(~10)  # Output: -11
 
 ## Deal with single bits, binary left shift and binary right shift
 
-**Content:**
-
 * **Binary left shift:**
     * Shifts the binary representation of a number to the left by a specified number of bits.
     * Multiplies by 2 raised to the power of the number of bits shifted.
@@ -415,3 +411,34 @@ print(10 << 2)  # Output: 40
 # Binary right shift
 print(10 >> 2)  # Output: 2
 ```
+
+## Define blocks of code
+
+In Python, indentation is used to define blocks of code. Instead of curly braces, Python uses spaces or tabs to indicate the structure of the code. This helps improve readability and organization of the code.
+* It is important to use consistent indentation (4 spaces or 1 tab) throughout your code.
+* Missing indentation or mixing spaces and tabs will cause a syntax error.
+* PEP 8 -- Style Guide for Python Code: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)
+* Indentation is a key element of Python syntax. Understanding and using indentation is essential for writing correct and readable code.
+
+**Example:**
+
+```python
+temperature = 35
+
+if temperature > 30:
+    # This block executes if the temperature is greater than 30
+    print("It's hot outside!")
+    print("Make sure to stay hydrated.")
+elif temperature > 20:
+    # This block executes if the temperature is between 20 and 30 (inclusive)
+    print("It's warm outside.")
+else:
+    # This block executes if the temperature is 20 or below
+    print("It's very cold outside!")
+    print("Put on a warm jacket")
+# This line is always printed regardless of the temperature
+print("Have a great day!")
+```
+
+
+
