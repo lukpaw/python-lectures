@@ -15,6 +15,13 @@
     * Logical and bitwise operations
     * Presentation: [./python02/python02.md](https://github.com/lukpaw/python-lectures/blob/main/python02/python02.md)
 
+* **Python 3 (E1M4):**
+    * Functions
+    * Tuples
+    * Dictionaries
+    * Exceptions
+    * Presentation: [./python03/python03.md](https://github.com/lukpaw/python-lectures/blob/main/python03/python03.md)
+
 **Additional Resources:**
 
 * Python Tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
