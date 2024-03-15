@@ -26,5 +26,5 @@ def greet2(name=None):
     return  # Optional return here
 
 
-greet("James")
-greet()
+greet2("James")
+greet2()
