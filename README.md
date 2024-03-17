@@ -27,3 +27,5 @@
 * Python Tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 * Learn Python: [https://www.learnpython.org/](https://www.learnpython.org/)
 * Python for Beginners: [https://www.w3schools.com/python/](https://www.w3schools.com/python/)
+
+&copy; 2024 dr inż. Łukasz Pawlik, Kielce University of Technology
