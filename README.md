@@ -22,6 +22,12 @@
     * Exceptions
     * Presentation: [./python03/python03.md](https://github.com/lukpaw/python-lectures/blob/main/python03/python03.md)
 
+* **Python 4 (E2M1):**
+    * Modules
+    * Packages
+    * Python Package Installer (PIP)
+    * Presentation: [./python04/python04.md](https://github.com/lukpaw/python-lectures/blob/main/python04/python04.md)
+
 **Additional Resources:**
 
 * Python Tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
