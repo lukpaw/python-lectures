@@ -152,4 +152,98 @@ By using these concepts, you can create well-structured, maintainable, and reusa
 
 ## Python Package Installer (PIP)
 
-TODO
+* Manages software packages for Python
+* PyPI (Python Package Index) a centralized repository of all available software packages for Python: https://pypi.org/
+* Accessible through `pip`
+
+## Verifying PIP installation
+
+* Open command prompt (Windows) or terminal (Mac/Linux)
+* Type: `pip --version`
+* This will display the installed pip version
+
+```commandline
+PS C:\Users\aniap\PycharmProjects\python-lectures> pip --version
+pip 24.0 from C:\Users\lukaszp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+
+```
+
+## PIP functionalities
+
+* `pip help <operation>` - Provides brief description of pip operations
+* `pip list` - Lists currently installed packages
+* `pip show <package_name>` - Shows information about a specific package, including dependencies
+* Searches PyPI for packages containing the specified string: https://pypi.org/search/
+
+```commandline
+pip help install
+pip show pygame
+```
+
+## Package Installation
+
+* `pip install <package_name>` - Installs a package system-wide (requires administrative rights)
+* `pip install --user <package_name>` - Installs a package for the current user only
+
+Pygame is a popular library for creating games in Python
+
+```commandline
+pip install pygame
+```
+
+```commandline
+PS C:\Users\lukaszp\PycharmProjects\python-lectures> pip install pygame
+Collecting pygame
+  Downloading pygame-2.5.2-cp312-cp312-win_amd64.whl.metadata (13 kB)
+Downloading pygame-2.5.2-cp312-cp312-win_amd64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 17.7 MB/s eta 0:00:00
+Installing collected packages: pygame
+Successfully installed pygame-2.5.2
+```
+
+**Example: Using Pygame**
+
+```python
+import pygame
+
+run = True
+width = 400
+height = 100
+pygame.init()
+screen = pygame.display.set_mode((width, height))
+font = pygame.font.SysFont(None, 48)
+text = font.render("Welcome to pygame", True, (255, 255, 255))
+screen.blit(text, ((width - text.get_width()) // 2, (height - text.get_height()) // 2))
+pygame.display.flip()
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT \
+                or event.type == pygame.MOUSEBUTTONUP \
+                or event.type == pygame.KEYUP:
+            run = False
+pygame.quit()
+```
+
+## Package Updates and Uninstallation
+
+* `pip install -U <package_name>` - Updates a previously installed package
+* `pip uninstall <package_name>` - Uninstalls a previously installed package
+
+```commandline
+pip install -U pygame
+pip uninstall pygame
+```
+
+## Installing Specific Versions
+
+* `pip install <package_name>==<version_number>` - Installs a specific version of a package
+
+```commandline
+pip install pygame==2.2.3
+```
+
+## PIP Summary
+
+* PIP is a powerful tool for managing Python packages
+* Use PIP to install, update, and uninstall packages
+* PIP simplifies the process of working with external libraries in Python projects
