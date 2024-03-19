@@ -163,8 +163,8 @@ By using these concepts, you can create well-structured, maintainable, and reusa
 * This will display the installed pip version
 
 ```commandline
-PS C:\Users\aniap\PycharmProjects\python-lectures> pip --version
-pip 24.0 from C:\Users\lukaszp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+PS C:\Users\lukpa\PycharmProjects\python-lectures> pip --version
+pip 24.0 from C:\Users\lukpa\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
 
 ```
 
@@ -192,7 +192,7 @@ pip install pygame
 ```
 
 ```commandline
-PS C:\Users\lukaszp\PycharmProjects\python-lectures> pip install pygame
+PS C:\Users\lukpa\PycharmProjects\python-lectures> pip install pygame
 Collecting pygame
   Downloading pygame-2.5.2-cp312-cp312-win_amd64.whl.metadata (13 kB)
 Downloading pygame-2.5.2-cp312-cp312-win_amd64.whl (10.8 MB)
