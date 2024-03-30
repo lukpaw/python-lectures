@@ -35,7 +35,7 @@
   * Errors, Exceptions, Assertions
   * Presentation: [./python05/python05.md](https://github.com/lukpaw/python-lectures/blob/main/python05/python05.md)
 
-* **Python 5 (E2M3):**
+* **Python 6 (E2M3):**
   * Object-Oriented Programming Basics
   * Class, Objects, Constructors
   * Instance and Class Variables, Methods, Private access
