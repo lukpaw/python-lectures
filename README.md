@@ -40,7 +40,7 @@
   * Class, Objects, Constructors
   * Instance and Class Variables, Methods, Private access
   * Inheritance, Method Overriding, Custom Exceptions
-  * Presentation: [./python05/python05.md](https://github.com/lukpaw/python-lectures/blob/main/python05/python05.md)
+  * Presentation: [./python06/python06.md](https://github.com/lukpaw/python-lectures/blob/main/python06/python06.md)
 
 * **Bibliography used in lectures:**
   * Cisco Network Academy: PCAP - Programming Essentials in Python: https://www.netacad.com/
