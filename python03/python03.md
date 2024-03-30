@@ -33,8 +33,6 @@ Functions are defined using the `def` keyword followed by specific rules:
     * **Execution:** Executes when the function is called.
     * **Nesting:** Indentation defines the function's scope.
 
-**Example:**
-
 ```python
 def introduction(first_name, last_name="Anonymous", age=-1):
     print(f"Hello, my name is {first_name} {last_name}")

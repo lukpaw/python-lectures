@@ -14,8 +14,6 @@
 * Faster development cycle – no need for compilation.
 * High portability – code works on different systems with an installed interpreter.
 
-**Example:**
-
 * **Java:**
     * `javac Hello.java` (compile)
     * `java Hello` (run)
@@ -27,8 +25,6 @@
 1. **Open the Command Prompt:** Search for "Command Prompt" or "Terminal" (depending on your operating system) and launch it.
 2. **Run Python code:** Type `python` and press Enter. If you have Python installed correctly, you should see a version message followed by three greater than signs (>>>). This is the Python interpreter prompt.
 3. **Execute Python statements:** Type Python code directly at the prompt and press Enter to execute it.
-
-**Example:**
 
 ```
 C:\Users\lukaszp>python  # Open the Python interpreter
@@ -74,8 +70,6 @@ Both Java and Python are powerful and versatile programming languages with a wid
 * It can print strings, numbers, variables, and more.
 * You can use the `+` operator to concatenate strings before printing.
 
-**Example:**
-
 ```python
 print("Hello, world!")
 print(10 + 5)
@@ -91,8 +85,6 @@ print(name)
 * Numbers can be integers, floats, or complex.
 * Booleans are True or False values.
 
-**Example:**
-
 ```python
 "This is a string."
 10  # Integer
@@ -106,8 +98,6 @@ True  # Boolean
 * Python supports other number systems besides decimal.
 * Octal numbers start with `0o` and use digits 0-7.
 * Hexadecimal numbers start with `0x` and use digits 0-9 and letters A-F.
-
-**Example:**
 
 ```python
 decimal = 10
@@ -124,8 +114,6 @@ print(hexa)  # Output: 175 (in hexadecimal)
 * Floats represent numbers with decimal points.
 * They are typically used for calculations involving fractions.
 * Scientific notation can be used for very large or very small numbers.
-
-**Example:**
 
 ```python
 pi = 3.14159
@@ -148,8 +136,6 @@ print(small_number)  # Output: 1.2345e-10
 * Use floats for numbers with decimals.
 * Consider the precision and accuracy needed.
 * Integers are typically faster and use less memory.
-
-**Example:**
 
 ```python
 # Integer
@@ -176,8 +162,6 @@ print(total_cost)  # Output: 25.0
 * `\'`: Single quote (within single-quoted strings)
 * `\"`: Double quote (within double-quoted strings)
 
-**Example:**
-
 ```python
 message1 = "Hello, world!"
 message2 = 'Hello, world!'
@@ -199,8 +183,6 @@ print(path)
 * Boolean values are True or False values.
 * They are used in conditional statements to control the flow of a program.
 
-**Example:**
-
 ```python
 # Assigning a Boolean value to a variable
 is_true = True
@@ -208,8 +190,6 @@ is_true = True
 # Checking the value of the variable
 print(is_true)  # Output: True
 ```
-
-**Example:**
 
 ```python
 # Checking if a user is authenticated
@@ -234,8 +214,6 @@ else:
 * `//`: Integer division
 * `%`: Modulus (remainder)
 * `**`: Exponentiation
-
-**Example:**
 
 ```python
 # Addition
@@ -271,8 +249,6 @@ print(10 ** 2)  # Output: 100
 2. Multiplication and Division
 3. Addition and Subtraction
 
-**Example:**
-
 ```python
 # Exponentiation is evaluated first
 print(2 + 3 * 4)  # Output: 14
@@ -285,8 +261,6 @@ print((2 + 3) * 4)  # Output: 20
 
 * Parentheses can be used to force an order of evaluation in expressions.
 * This can be useful to avoid unexpected results.
-
-**Example:**
 
 ```python
 # Without parentheses, the expression is evaluated from left to right
@@ -357,8 +331,6 @@ print(name)  # Output: Jane Doe
 * `%=`: Modulus assignment
 * `**=`: Exponentiation assignment
 
-**Example:**
-
 ```python
 # Increase the value of the variable `x` by 1
 x += 1
@@ -374,8 +346,6 @@ z *= 3
 
 * The `input()` function is used to get input from the user.
 * It returns a string, which can be converted to other types.
-
-**Example:**
 
 ```python
 # Get the user's name
@@ -393,8 +363,6 @@ print("Hello, {}! You are {} years old.".format(name, age))
 * Type casting is the process of converting a value from one type to another.
 * The `int()` function can be used to convert a string to an integer.
 * The `float()` function can be used to convert a string to a float.
-
-**Example:**
 
 ```python
 # Convert the string "10" to an integer
@@ -415,8 +383,6 @@ print(pi)  # Output: 3.14
 * The `+` operator can be used to concatenate strings.
 * The `*` operator can be used to repeat a string a specified number of times.
 
-**Example:**
-
 ```python
 # Concatenate two strings
 message = "Hello, " + "world!"
@@ -435,8 +401,6 @@ print(repeated_string)  # Output: abcabcabcabc
 
 * The `str()` function can be used to convert a value to a string.
 * This can be useful for formatting output or for storing data in a string format.
-
-**Example:**
 
 ```python
 # Convert an integer to a string

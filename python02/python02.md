@@ -3,8 +3,6 @@
 * The `==` operator checks if two values are equal.
 * It can be used with numbers, strings, and other data types.
 
-**Example:**
-
 ```python
 # Comparing two numbers
 x = 10
@@ -23,8 +21,6 @@ print(name1 == name2)  # Output: True
 
 * Comparison operators are used to compare values.
 * The available operators are `>`, `<`, `>=`, `<=`, `!=`.
-
-**Example:**
 
 ```python
 # Comparing two numbers
@@ -48,8 +44,6 @@ print(name1 < name2)  # Output: True
 * The `if` statement checks a condition and executes code if it is true.
 * The `if-else` statement executes one code if the condition is true and another if it is false.
 * The `elif` statement allows you to check for additional conditions in an `if` statement.
-
-**Example:**
 
 ```python
 # If statement
@@ -112,8 +106,6 @@ print(not False)  # Output: True
 * An infinite loop is a `while` loop that never terminates.
 * A counter variable can be used to exit a loop.
 
-**Example:**
-
 ```python
 # Infinite loop
 while True:
@@ -132,8 +124,6 @@ while counter < 5:
 * The `range()` function generates a sequence of numbers.
 * The `for` loop can be used to iterate over a string.
 
-**Example:**
-
 ```python
 # Iterate over a sequence of numbers
 for i in range(5):
@@ -148,8 +138,6 @@ for letter in "Hello, world!":
 
 * The `break` statement exits a loop.
 * The `continue` statement skips to the next iteration of a loop.
-
-**Example:**
 
 ```python
 # Using the break statement to exit a loop
@@ -169,8 +157,6 @@ for i in range(10):
 
 * A `while` loop or `for` loop can have an `else` branch.
 * The `else` branch is executed if the loop terminates normally.
-
-**Example:**
 
 ```python
 # While loop with an else branch
@@ -194,8 +180,6 @@ else:
 * They can be created using square brackets `[]`.
 * Elements can be of any type, including strings, numbers, and other lists.
 
-**Example:**
-
 ```python
 # Create a list of fruits
 fruits = ["apple", "banana", "cherry"]
@@ -209,8 +193,6 @@ print(fruits)  # Output: ['apple', 'banana', 'cherry']
 * Lists can be indexed using their position.
 * The first element has an index of 0, the second element has an index of 1, and so on.
 * Elements can be accessed using their index in square brackets.
-
-**Example:**
 
 ```python
 # Access the first element
@@ -226,8 +208,6 @@ last_fruit = fruits[-1]  # last_fruit = "cherry"
 * Addition of two lists concatenates them.
 * Multiplication of a list by a number repeats the list that many times.
 
-**Example:**
-
 ```python
 # Add two lists
 fruits + ["orange", "mango"]  # ['apple', 'banana', 'cherry', 'orange', 'mango']
@@ -242,8 +222,6 @@ fruits * 3  # ['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry', 'apple'
 * `append()` adds an element to the end of the list.
 * `remove()` removes an element from the list.
 * `sort()` sorts the list in place.
-
-**Example:**
 
 ```python
 # Append an element to the list
@@ -262,8 +240,6 @@ fruits.sort()  # fruits = ['apple', 'cherry', 'mango', 'orange']
 * The `in` operator can be used to check if an element is in a list.
 * The `len()` function returns the length of a list.
 
-**Example:**
-
 ```python
 # Nested lists
 nested_list = [["apple", "banana"], ["cherry", "orange"]]
@@ -280,8 +256,6 @@ len(fruits)  # 4
 * The `for` loop allows you to iterate over each element in a list.
 * The syntax `for i in list_name` iterates over each element and assigns it to the variable `i`.
 
-**Example:**
-
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -296,8 +270,6 @@ for fruit in fruits:
 * `start` (inclusive) and `end` (exclusive) define the range of elements.
 * `step` defines the increment between elements (defaults to 1).
 * Negative indices can be used in slices to start from the end.
-
-**Example:**
 
 ```python
 fruits = ["apple", "banana", "cherry", "orange", "mango"]
@@ -317,8 +289,6 @@ sliced_fruits = fruits[::2]  # sliced_fruits = ["apple", "cherry", "mango"]
 * The `in` operator checks if a value exists in a list.
 * The `not in` operator checks if a value does not exist in a list.
 
-**Example:**
-
 ```python
 fruits = ["apple", "banana", "cherry"]
 
@@ -333,8 +303,6 @@ fruits = ["apple", "banana", "cherry"]
 
 * Lists can be nested to create two-dimensional or even multidimensional lists.
 * Two-dimensional lists can be used to represent tables, matrices, or other two-dimensional data structures.
-
-**Example:**
 
 ```python
 # 2D list representing a table
@@ -419,8 +387,6 @@ In Python, indentation is used to define blocks of code. Instead of curly braces
 * Missing indentation or mixing spaces and tabs will cause a syntax error.
 * PEP 8 -- Style Guide for Python Code: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)
 * Indentation is a key element of Python syntax. Understanding and using indentation is essential for writing correct and readable code.
-
-**Example:**
 
 ```python
 temperature = 35
