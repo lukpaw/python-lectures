@@ -1,31 +1,21 @@
-class Shape:
-    def area(self):
-        raise NotImplementedError("Subclasses should implement area()")
+class InsufficientFundsError(Exception):  # Inherits from Exception
+    """Raised when a bank account withdrawal attempt exceeds available funds."""
+    pass
 
 
-class Rectangle(Shape):
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+class Account:
+    def __init__(self, balance):
+        self.balance = balance
 
-    def area(self):
-        return self.width * self.height
-
-
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return 3.14 * self.radius ** 2
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise InsufficientFundsError("Not enough funds in your account!")
+        self.balance -= amount
 
 
-shape = Shape()
-# print(shape.width)  # fails with AttributeError: 'Shape' object has no attribute 'width'
-# print(shape.area())  # raise NotImplementedError
-
-rectangle = Rectangle(4, 5)
-print(rectangle.area())  # Output: 20
-
-circle = Circle(3)
-print(circle.area())  # Output: 28.26
+# Usage
+try:
+    account = Account(100)
+    account.withdraw(150)  # Raises InsufficientFundsError
+except InsufficientFundsError as e:
+    print(e)  # Output: Not enough funds in your account!

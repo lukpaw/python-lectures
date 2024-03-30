@@ -291,12 +291,11 @@ print(hasattr(person1, "get_marital_status"))  # Output: False
 
 ## Inner Life of Classes and Objects
 
-* Special attributes provide information about classes and objects.
-
-  * `__dict__`: Dictionary containing the object's instance variables (generally not for direct modification).
-  * `__name__`: The class name as a string.
-  * `__module__`: The module name where the class is defined (as a string).
-  * `__bases__`: A tuple containing the class's parent classes (superclasses).
+Special attributes provide information about classes and objects:
+* `__dict__`: Dictionary containing the object's instance variables (generally not for direct modification).
+* `__name__`: The class name as a string.
+* `__module__`: The module name where the class is defined (as a string).
+* `__bases__`: A tuple containing the class's parent classes (superclasses).
 
 **Note:** These attributes are typically used internally for Python's object system and shouldn't be relied upon in everyday coding.
 
@@ -364,13 +363,12 @@ cat1.make_sound()  # Output: Meow!
 
 ## Special Methods in Inheritance
 
-* Several special methods are used with inheritance:
-
-   * `__str__()`: Defines how an object is converted to a string (for printing, etc.).
-   * `issubclass(Class1, Class2)`: Checks if `Class1` is a subclass of `Class2`.
-   * `isinstance(Object, Class)`: Checks if an object belongs to a specific class.
-   * `is`: Checks if two variables refer to the same object in memory.
-   * `super()`: Returns a reference to the nearest superclass.
+Several special methods are used with inheritance:
+* `__str__()`: Defines how an object is converted to a string (for printing, etc.).
+* `issubclass(Class1, Class2)`: Checks if `Class1` is a subclass of `Class2`.
+* `isinstance(Object, Class)`: Checks if an object belongs to a specific class.
+* `is`: Checks if two variables refer to the same object in memory.
+* `super()`: Returns a reference to the nearest superclass.
 
 ```python
 class Car:
@@ -428,14 +426,44 @@ print(
 
 [Example 5](https://github.com/lukpaw/python-lectures/blob/main/python06/p06_example05.py)
 
+## Custom Exceptions
+
+* Inherit from built-in exceptions to create specific error types.
+* Provides more informative error messages for your application.
+
+```python
+class InsufficientFundsError(Exception):  # Inherits from Exception
+    """Raised when a bank account withdrawal attempt exceeds available funds."""
+    pass
+
+
+class Account:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise InsufficientFundsError("Not enough funds in your account!")
+        self.balance -= amount
+
+
+# Usage
+try:
+    account = Account(100)
+    account.withdraw(150)  # Raises InsufficientFundsError
+except InsufficientFundsError as e:
+    print(e)  # Output: Not enough funds in your account!
+```
+
+[Example 6](https://github.com/lukpaw/python-lectures/blob/main/python06/p06_example06.py)
+
 ## Property Resolution Order
 
-* When searching for an object/class property (method, variable), Python follows this order:
-
-  1. The object itself.
-  2. All superclasses in the object's inheritance hierarchy (bottom to top).
-  3. Left-to-right order if multiple classes exist at the same inheritance level.
-  4. If not found, raises an `AttributeError` exception.
+When searching for an object/class property (method, variable), Python follows this order:
+1. The object itself.
+2. All superclasses in the object's inheritance hierarchy (bottom to top).
+3. Left-to-right order if multiple classes exist at the same inheritance level.
+4. If not found, raises an `AttributeError` exception.
 
 ```python
 class Shape:
@@ -469,37 +497,6 @@ print(rectangle.area())  # Output: 20
 
 circle = Circle(3)
 print(circle.area())  # Output: 28.26
-```
-
-[Example 6](https://github.com/lukpaw/python-lectures/blob/main/python06/p06_example06.py)
-
-## Custom Exceptions
-
-* Inherit from built-in exceptions to create specific error types.
-* Provides more informative error messages for your application.
-
-```python
-class InsufficientFundsError(Exception):  # Inherits from Exception
-    """Raised when a bank account withdrawal attempt exceeds available funds."""
-    pass
-
-
-class Account:
-    def __init__(self, balance):
-        self.balance = balance
-
-    def withdraw(self, amount):
-        if amount > self.balance:
-            raise InsufficientFundsError("Not enough funds in your account!")
-        self.balance -= amount
-
-
-# Usage
-try:
-    account = Account(100)
-    account.withdraw(150)  # Raises InsufficientFundsError
-except InsufficientFundsError as e:
-    print(e)  # Output: Not enough funds in your account!
 ```
 
 [Example 7](https://github.com/lukpaw/python-lectures/blob/main/python06/p06_example07.py)
