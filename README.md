@@ -28,6 +28,13 @@
   * Python Package Installer (PIP)
   * Presentation: [./python04/python04.md](https://github.com/lukpaw/python-lectures/blob/main/python04/python04.md)
 
+* **Python 5 (E2M2):**
+  * UTF-8, I18N, Strings 
+  * String Operations, Methods, Operators, Indexing, Slicing 
+  * Comparing, Sorting Strings, Strings vs. Numbers 
+  * Errors, Exceptions, Assertions
+  * Presentation: [./python05/python05.md](https://github.com/lukpaw/python-lectures/blob/main/python05/python05.md)
+
 * **Bibliography used in lectures:**
   * Cisco Network Academy: PCAP - Programming Essentials in Python: https://www.netacad.com/
   * Python Tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)

@@ -52,7 +52,7 @@ print(description)
 * **Replication (*):** Creates a new string by repeating a string a specific number of times
 * **ord()**: Returns the Unicode code point for a given character
 * **chr()**: Converts a Unicode code point to its corresponding character
-* **min() & max()**: Find the minimum and maximum characters (based on Unicode order)
+* **min()** and **max()**: Find the minimum and maximum characters (based on Unicode order)
 * **index()**: Locates the first occurrence of a substring within a string
 * **list()**: Converts a string to a list of characters
 * **count()**: Counts the number of occurrences of a substring within a string
@@ -94,7 +94,7 @@ print(f"Number of 'o' characters: {letter_count}")  # Output: Number of 'o' char
 
 [Example 1](https://github.com/lukpaw/python-lectures/blob/main/python05/p05_example01.py)
 
-## Strings as Sequences: Indexing & Slicing
+## Strings as Sequences: Indexing and Slicing
 
 * Strings are ordered sequences, characters can be accessed by index (starting from 0)
 * Slicing extracts a portion of the string using start:end:step syntax
