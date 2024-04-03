@@ -1,7 +1,9 @@
-message = " welcome to Python "
+message = "welcome to Python"
 
 # capitalize() - Converts first letter to uppercase
 print(message.capitalize())  # Output: Welcome to Python 
+
+message = " welcome to Python "
 
 # center(width, fillchar) - Centers text within a specified width
 print(message.center(30, '*'))   # Output: ************welcome to Python************
