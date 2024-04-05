@@ -22,6 +22,7 @@ class ElectricCar(Car):
 
 # Create objects
 car1 = Car("Honda Civic")
+car2 = Car("Honda Civic")
 electric_car1 = ElectricCar("Tesla Model S", 400)
 
 # Print using __str__
@@ -29,11 +30,12 @@ print(car1)  # Output: Car model: Honda Civic
 print(electric_car1)  # Output: Electric Car model: Tesla Model S, Battery Range: 400km
 
 # Example using isinstance (not directly related to object or instance, but demonstrates how to use it)
-print(isinstance(electric_car1, Car))  # Output: True (ElectricCar is a subclass of Car)
+print("Is instance: " + str(isinstance(electric_car1, Car)))  # Output: True (ElectricCar is a subclass of Car)
 
 # Example using is (checks object memory location, not recommended for inheritance checks)
-print(car1 is car1)  # Output: True (same object)
-
+print("The same object: " + str(car1 is car1))  # Output: True (same object)
+print("The same object: " + str(car1 is car2))  # Output: False (not the same object)
+print("The same model: " + str(car1.model is car2.model))  # Output: False (not the same object)
 
 # Example using super() to call the parent class method (can be useful for chained method calls)
 class LuxuryCar(ElectricCar):

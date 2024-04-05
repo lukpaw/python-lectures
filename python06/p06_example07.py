@@ -1,6 +1,7 @@
 class Shape:
     def area(self):
-        raise NotImplementedError("Subclasses should implement area()")
+        return "Shape area (maybe unknown). "
+        # raise NotImplementedError("Subclasses should implement area()")
 
 
 class Rectangle(Shape):
@@ -9,7 +10,7 @@ class Rectangle(Shape):
         self.height = height
 
     def area(self):
-        return self.width * self.height
+        return super().area() + "Rectangle area: " + str(self.width * self.height)
 
 
 class Circle(Shape):
@@ -17,15 +18,18 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return 3.14 * self.radius ** 2
+        return "Circle area: " + str(3.14 * self.radius ** 2)
 
 
-shape = Shape()
-# print(shape.width)  # fails with AttributeError: 'Shape' object has no attribute 'width'
-# print(shape.area())  # raise NotImplementedError
+def print_area(shape: Shape):
+    print("shape.area(): " + str(shape.area()))
+
+
+shape1 = Shape()
+print_area(shape1)
 
 rectangle = Rectangle(4, 5)
-print(rectangle.area())  # Output: 20
+print_area(rectangle)
 
 circle = Circle(3)
-print(circle.area())  # Output: 28.26
+print_area(circle)
