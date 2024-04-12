@@ -42,6 +42,13 @@
   * Inheritance, Method Overriding, Custom Exceptions
   * Presentation: [./python06/python06.md](https://github.com/lukpaw/python-lectures/blob/main/python06/python06.md)
 
+* **Python 7 (E2M4):**
+  * Iterators, Yield Statement, Conditional Expressions 
+  * Generators, Lambda, map(), filter(), Closures 
+  * File Processing, Handling File I/O Errors, OS Function 
+  * Dates from Timestamps, Calendar
+  * Presentation: [./python07/python07.md](https://github.com/lukpaw/python-lectures/blob/main/python07/python07.md)
+
 * **Bibliography used in lectures:**
   * Cisco Network Academy: PCAP - Programming Essentials in Python: https://www.netacad.com/
   * Python Tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
