@@ -55,4 +55,6 @@
   * Learn Python: [https://www.learnpython.org/](https://www.learnpython.org/)
   * Python for Beginners: [https://www.w3schools.com/python/](https://www.w3schools.com/python/)
 
+Sources: Cisco Networking Academy, PCAP - Programming Essentials in Python
+
 &copy; 2024 Łukasz Pawlik
