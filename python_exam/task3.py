@@ -35,34 +35,3 @@ Addition:
 Subtraction:
 10 - 4 = 6
 """
-
-class Operation:
-  def __init__(self, num1, num2):
-    self.num1 = num1
-    self.num2 = num2
-
-  def make_operation(self):
-    pass
-
-
-class Addition(Operation):
-
-  def make_operation(self):
-    return self.num1 + self.num2
-
-
-class Subtraction(Operation):
-  def make_operation(self):
-    return self.num1 - self.num2
-
-
-# Test cases
-print("Addition:")
-add_operation = Addition(5, 3)
-result = add_operation.make_operation()
-print(f"{add_operation.num1} + {add_operation.num2} = {result}")
-
-print("\nSubtraction:")
-sub_operation = Subtraction(10, 4)
-result = sub_operation.make_operation()
-print(f"{sub_operation.num1} - {sub_operation.num2} = {result}")
